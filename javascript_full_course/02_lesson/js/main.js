@@ -13,5 +13,5 @@ const myVariable = 'Mathematics';
 // console.log(myVariable.toLowerCase());
 // console.log(myVariable.includes('mat'));
 // console.log(myVariable.split('e'));
-console.log('John, Joe, Dave'.split(','));
-console.log('Every good boy does fine'.split(' '));
+// console.log('John, Joe, Dave'.split(','));
+// console.log('Every good boy does fine'.split(' '));
