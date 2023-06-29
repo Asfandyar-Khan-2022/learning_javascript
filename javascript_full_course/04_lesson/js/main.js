@@ -1,11 +1,4 @@
-// An integer is a whole number.
-const myNumber = 42;
-
-// A number with a decimal point is a float 
-// which references the 'floating point'
-const myFloat = 42.0;
-
-const myString = '42';
-
-console.log(Number(false));
-
+// Your First Code Challenge
+// Write code that will return a random letter from your name
+my_name = 'Asfandyar'
+console.log(my_name.charAt(Math.floor(Math.random() * (my_name.length))));
