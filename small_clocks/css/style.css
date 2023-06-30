@@ -1,0 +1,60 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clock {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, calc(4 * 50px));
+            grid-template-rows: repeat(2, calc(6 * 50px));
+        }
+
+        .circle {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            grid-template-rows: repeat(6, 50px);
+        }
+
+        span {
+            width: 50px;
+            height: 50px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: inset 1px -1px 5px 1px rgba(80, 105, 100, 0.5);
+        }
+
+        span:before,
+        span::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            height: 25px;
+            width: 6px;
+            background: black;
+            transition: 4s;
+            transform-origin: bottom;
+        }
+
+        span::before {
+            transform: rotate(var(--angle-1));
+        }
+
+        span::after {
+            transform: rotate(var(--angle-2));
+        }
