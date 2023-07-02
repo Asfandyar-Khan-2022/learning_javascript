@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body > nav {
+    background-color: black;
+    color: white;
+}
+
+main{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+    background-color: gray;
+  }
+
+#view2 {
+    align-items: center;
+    background-color: blue;
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vw;
+    border: solid black 1px;
+    color: white;
+    justify-content: center;
+    z-index: 3;
+}
+#view2 div{
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    border: solid black 1px;
+    color: white;
+    justify-content: center;
+    z-index: 3;
+}
+
+/* use the code below for your Event Listeners CSS. The linked one does not work*/
